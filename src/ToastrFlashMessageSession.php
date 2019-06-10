@@ -24,7 +24,7 @@
                 $data = (array)$data;
                 
                 foreach ($data as $i => $message) {
-                    Notification::widget([
+                    ToastrFlashMessage::widget([
                         'type' => Html::encode($type),
                         'title' => ucfirst(Html::encode($type)),
                         'message' => Html::encode($message),
