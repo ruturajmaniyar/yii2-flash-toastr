@@ -14,12 +14,6 @@
         "yiisoft/yii2": "~2.0.0",
         "bower-asset/toastr": "^2.1"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "ruturajmaniyar\\widgets\\toast\\": "src"
