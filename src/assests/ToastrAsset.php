@@ -1,6 +1,6 @@
 <?php
     
-    namespace ruturaj\widgets\toast\assests;
+    namespace ruturajmaniyar\widgets\toast\assests;
     
     use yii\web\AssetBundle;
     

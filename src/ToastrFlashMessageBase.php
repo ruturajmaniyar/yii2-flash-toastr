@@ -1,8 +1,8 @@
 <?php
     
-    namespace ruturaj\widgets\toast;
+    namespace ruturajmaniyar\widgets\toast;
     
-    use ruturaj\widgets\toast\assests\ToastrAsset;
+    use ruturajmaniyar\widgets\toast\assests\ToastrAsset;
     use yii\base\Widget;
     use yii\helpers\Html;
     use yii\helpers\Json;

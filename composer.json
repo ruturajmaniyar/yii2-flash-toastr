@@ -2,11 +2,11 @@
     "name": "ruturajmaniyar/yii2-flash-toastr",
     "description": "Toastr flash notification using jQuery with yii2",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","ruturaj","toastr","flash","message","notification","jquery"],
+    "keywords": ["yii2","extension","ruturaj","maniyar","ruturajmaniyar","toastr","flash","message","notification","jquery"],
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Ruturaj",
+            "name": "Ruturaj Maniyar",
             "email": "ruturaj.maniyar@gmail.com"
         }
     ],

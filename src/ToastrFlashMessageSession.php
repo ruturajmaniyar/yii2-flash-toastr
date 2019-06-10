@@ -1,6 +1,6 @@
 <?php
     
-    namespace ruturaj\widgets\toast;
+    namespace ruturajmaniyar\widgets\toast;
     
     use Yii;
     use yii\helpers\Html;
