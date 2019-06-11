@@ -1,6 +1,10 @@
-ruturaj/yii2-flash-toastr
+ruturajmaniyar/yii2-flash-toastr
 =========================
 Toastr flash notification using jQuery with yii2
+
+Current Version
+---------------
+v1.0 @stable @pre-release
 
 Installation
 ------------
@@ -10,13 +14,18 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist ruturaj/yii2-flash-toastr "*"
+php composer.phar require --prefer-dist ruturajmaniyar/yii2-flash-toastr: "dev-master"
+```
+or
+
+```
+composer require --prefer-dist ruturajmaniyar/yii2-flash-toastr: "dev-master"
 ```
 
 or add
 
 ```
-"ruturaj/yii2-flash-toastr": "*"
+"ruturajmaniyar/yii2-flash-toastr": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,4 +37,63 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \ruturaj\widgets\toast\AutoloadExample::widget(); ?>```
+<?php if (Yii::$app->session->hasFlash('success')): ?>
+    <?= ToastrFlashMessage::widget([
+        'type' => 'success',
+        'title' => 'Success',
+        'message' => Yii::$app->session->getFlash('success')
+    ]); ?>
+<?php endif; ?>
+
+<?php if (Yii::$app->session->hasFlash('error')): ?>
+    <?= ToastrFlashMessage::widget([
+        'type' => 'error',
+        'title' => 'Error',
+        'message' => Yii::$app->session->getFlash('error')
+    ]); ?>
+<?php endif; ?>
+```
+
+You can also use with below code
+
+```php
+<?= ToastrFlashMessageSession::widget() ?>
+```
+With above code, extension set toastr message dynamically based on your flash session message
+
+Other Options
+-------------
+```php
+'options' => [
+        "closeButton" => true,
+        "newestOnTop" => true,
+        "progressBar" => true,
+        "positionClass" => ToastrFlashMessage::POSITION_TOP_RIGHT,
+        "showDuration" => "300", 
+        "hideDuration" => "1000",
+        "timeOut" => "5000",
+        "extendedTimeOut" => "1000",
+        "showEasing" => "swing",
+        "hideEasing" => "linear",
+        "closeEasing" => "linear",
+        "showMethod" => "slideDown",
+        "hideMethod" => "slideUp",
+        "closeMethod" => "slideUp"
+    ]
+```
+##### Toast Position Options:
+```
+POSITION_TOP_RIGHT = 'toast-top-right';
+POSITION_TOP_LEFT = 'toast-top-left';
+POSITION_TOP_CENTER = 'toast-top-center';
+POSITION_TOP_FULL_WIDTH = 'toast-top-full-width';
+
+POSITION_BOTTOM_RIGHT = 'toast-bottom-right';
+POSITION_BOTTOM_LEFT = 'toast-bottom-left';
+POSITION_BOTTOM_CENTER = 'toast-bottom-center';
+POSITION_BOTTOM_FULL_WIDTH = 'toast-bottom-full-width';
+```
+
+##### DEMO
+
+* http://codeseven.github.io/toastr/demo.html
