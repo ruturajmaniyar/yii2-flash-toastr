@@ -2,6 +2,9 @@ ruturajmaniyar/yii2-flash-toastr
 =========================
 Toastr flash notification using jQuery with yii2
 
+![GitHub release](https://img.shields.io/github/release-pre/ruturajmaniyar/yii2-flash-toastr.svg)
+[![Packagist](https://img.shields.io/packagist/dt/ruturajmaniyar/yii2-flash-toastr.svg)](https://packagist.org/packages/ruturajmaniyar/yii2-flash-toastr)
+
 Current Version
 ---------------
 v1.0 @stable @pre-release
